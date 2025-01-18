@@ -1,0 +1,11 @@
+﻿  MergeSortImprove1.cpp
+D:\Desktop\【数据结构】09020311周钧儒\Project4\Pro4\CBuffer.h(22,21): warning C4018: “>=”: 有符号/无符号不匹配
+D:\Desktop\【数据结构】09020311周钧儒\Project4\Pro4\MergeSortImprove1.cpp(81,15): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+D:\Desktop\【数据结构】09020311周钧儒\Project4\Pro4\MergeSortImprove1.cpp(90,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\Desktop\【数据结构】09020311周钧儒\Project4\Pro4\MergeSortImprove1.cpp(338,37): warning C4018: “<”: 有符号/无符号不匹配
+D:\Desktop\【数据结构】09020311周钧儒\Project4\Pro4\MergeSortImprove1.cpp(356,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\Desktop\【数据结构】09020311周钧儒\Project4\Pro4\MergeSortImprove1.cpp(405,39): warning C4018: “<=”: 有符号/无符号不匹配
+D:\Desktop\【数据结构】09020311周钧儒\Project4\Pro4\MergeSortImprove1.cpp(444,39): warning C4018: “<=”: 有符号/无符号不匹配
+D:\Desktop\【数据结构】09020311周钧儒\Project4\Pro4\CBuffer.h(50): warning C4715: “Buffer::get”: 不是所有的控件路径都返回值
+D:\Desktop\【数据结构】09020311周钧儒\Project4\Pro4\CBuffer.h(55): warning C4715: “Buffer::getlast”: 不是所有的控件路径都返回值
+  Pro4.vcxproj -> D:\Desktop\【数据结构】09020311周钧儒\Project4\Debug\Pro4.exe

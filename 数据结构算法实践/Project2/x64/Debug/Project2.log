@@ -1,0 +1,3 @@
+﻿  main.cpp
+E:\OneDrive\文档\大三\数据结构算法实践\Project2\main.cpp(190,15): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  Project2.vcxproj -> E:\OneDrive\文档\大三\数据结构算法实践\Project2\x64\Debug\Project2.exe

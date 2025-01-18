@@ -1,0 +1,4 @@
+﻿  test.cpp
+D:\桌面\学习\大三上\04数据结构与算法专题实践\09020311周钧儒数据结构实践\Project1\Project1\Matrix.h(83,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+D:\桌面\学习\大三上\04数据结构与算法专题实践\09020311周钧儒数据结构实践\Project1\Project1\Cache.h(139,20): warning C4018: “<”: 有符号/无符号不匹配
+  Project1.vcxproj -> D:\桌面\学习\大三上\04数据结构与算法专题实践\09020311周钧儒数据结构实践\Project1\Debug\Project1.exe
