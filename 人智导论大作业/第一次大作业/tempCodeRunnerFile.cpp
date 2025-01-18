@@ -1,0 +1,1 @@
+ visited[visitedNum(currentPuzzleNode)] = 1;
