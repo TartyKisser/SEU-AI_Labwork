@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.seu.edu.cn/ontologies/academic_system.owl/"
+     xml:base="http://www.seu.edu.cn/ontologies/academic_system.owl/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:academic_system="http://www.seu.edu.cn/ontologies/academic_system.owl#">
+    <owl:Ontology rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#attends -->
+
+    <owl:ObjectProperty rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#attends">
+        <rdfs:domain rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Student"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#attends"/>
+                <owl:someValuesFrom rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Course"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#employs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/9/untitled-ontology-6#University"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#employs"/>
+                <owl:someValuesFrom rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Professor"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Professor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#hasCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#hasCourse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/9/untitled-ontology-6#University"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#hasCourse"/>
+                <owl:allValuesFrom rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Course"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#hasRoom -->
+
+    <owl:ObjectProperty rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#hasRoom">
+        <rdfs:domain rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Course"/>
+        <rdfs:range rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Classroom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#teaches">
+        <rdfs:domain rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Professor"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#teaches"/>
+                <owl:allValuesFrom rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Course"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#hasAge">
+        <rdfs:domain rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Professor"/>
+        <rdfs:domain rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/9/untitled-ontology-6#University"/>
+        <rdfs:domain rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Classroom"/>
+        <rdfs:domain rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Professor"/>
+        <rdfs:domain rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/9/untitled-ontology-6#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/9/untitled-ontology-6#University"/>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Classroom -->
+
+    <owl:Class rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Classroom"/>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Course -->
+
+    <owl:Class rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Course"/>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Person -->
+
+    <owl:Class rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Person"/>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Professor -->
+
+    <owl:Class rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Student -->
+
+    <owl:Class rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Student">
+        <rdfs:subClassOf rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Alice">
+        <rdf:type rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Student"/>
+        <academic_system:attends rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#CS101"/>
+        <academic_system:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</academic_system:hasAge>
+        <academic_system:hasName>Alice</academic_system:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Andrew -->
+
+    <owl:NamedIndividual rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Andrew">
+        <academic_system:attends rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#CS101"/>
+        <academic_system:attends rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#PR102"/>
+        <academic_system:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</academic_system:hasAge>
+        <academic_system:hasName>Andrew</academic_system:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Bob">
+        <rdf:type rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Professor"/>
+        <academic_system:teaches rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#CS101"/>
+        <academic_system:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</academic_system:hasAge>
+        <academic_system:hasName>Bob</academic_system:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Brian -->
+
+    <owl:NamedIndividual rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Brian">
+        <academic_system:teaches rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#PR102"/>
+        <academic_system:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</academic_system:hasAge>
+        <academic_system:hasName>Brian</academic_system:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#CS101">
+        <rdf:type rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Classroom"/>
+        <academic_system:hasRoom rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Room401"/>
+        <academic_system:hasName>CS101</academic_system:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#PR102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#PR102">
+        <rdf:type rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Course"/>
+        <academic_system:hasRoom rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Room302"/>
+        <academic_system:hasName>PR102</academic_system:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Room302 -->
+
+    <owl:NamedIndividual rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Room302">
+        <rdf:type rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Classroom"/>
+        <academic_system:hasName>Room302</academic_system:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Room401 -->
+
+    <owl:NamedIndividual rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Room401">
+        <rdf:type rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Classroom"/>
+        <academic_system:hasName>Room401</academic_system:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.seu.edu.cn/ontologies/academic_system.owl#Stanford -->
+
+    <owl:NamedIndividual rdf:about="http://www.seu.edu.cn/ontologies/academic_system.owl#Stanford">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/9/untitled-ontology-6#University"/>
+        <academic_system:employs rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Bob"/>
+        <academic_system:employs rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#Brian"/>
+        <academic_system:hasCourse rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#CS101"/>
+        <academic_system:hasCourse rdf:resource="http://www.seu.edu.cn/ontologies/academic_system.owl#PR102"/>
+        <academic_system:hasName>Stanford University</academic_system:hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
