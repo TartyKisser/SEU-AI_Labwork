@@ -1,0 +1,26 @@
+{
+    "action": "output",
+    "models": {
+        "model1": {
+            "support_labels": [
+                "001.Black_footed_Albatross",
+                "011.Rusty_Blackbird",
+                "006.Least_Auklet"
+            ],
+            "predicted_labels": [
+                "001.Black_footed_Albatross",
+                "011.Rusty_Blackbird",
+                "006.Least_Auklet",
+                "001.Black_footed_Albatross",
+                "006.Least_Auklet",
+                "006.Least_Auklet",
+                "011.Rusty_Blackbird",
+                "006.Least_Auklet",
+                "006.Least_Auklet",
+                "001.Black_footed_Albatross",
+                "001.Black_footed_Albatross"
+            ]
+        }
+    }
+}
+

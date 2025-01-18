@@ -1,0 +1,94 @@
+{
+  "train": {
+    "best_acc": 0.7118133333333331,
+    "best_epoch_checkpoint_path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-158",
+    "num_performances": 500,
+    "avr_loss": 0.7684468975067141,
+    "var_loss": 0.05005424236324426,
+    "avr_accuracy": 0.7046933333333337,
+    "var_accuracy": 0.010079910220440884
+  },
+  "val": {
+    "best_acc": 0.6592000000000005,
+    "best_epoch_checkpoint_path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-145",
+    "num_performances": 200,
+    "avr_loss": 1.0058392299711705,
+    "var_loss": 0.0929086779488366,
+    "avr_accuracy": 0.6301999999999998,
+    "var_accuracy": 0.011591249581239537
+  },
+  "current_best": {
+    "train": {
+      "acc": 0.7118133333333331,
+      "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-158",
+      "epoch": 158
+    },
+    "val": {
+      "acc": 0.6592000000000005,
+      "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-145",
+      "epoch": 145
+    },
+    "test": {
+      "acc": 0.0,
+      "path": null,
+      "epoch": -1
+    }
+  },
+  "previous_bests": {
+    "train": [
+      {
+        "acc": 0.7062933333333332,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-120",
+        "epoch": 120
+      },
+      {
+        "acc": 0.7067466666666662,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-140",
+        "epoch": 140
+      },
+      {
+        "acc": 0.7075466666666662,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-141",
+        "epoch": 141
+      },
+      {
+        "acc": 0.7082933333333334,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-148",
+        "epoch": 148
+      },
+      {
+        "acc": 0.7106666666666666,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-157",
+        "epoch": 157
+      }
+    ],
+    "val": [
+      {
+        "acc": 0.6277333333333333,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-054",
+        "epoch": 54
+      },
+      {
+        "acc": 0.6404666666666669,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-055",
+        "epoch": 55
+      },
+      {
+        "acc": 0.6466666666666666,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-080",
+        "epoch": 80
+      },
+      {
+        "acc": 0.6521333333333332,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-100",
+        "epoch": 100
+      },
+      {
+        "acc": 0.6583333333333337,
+        "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-129",
+        "epoch": 129
+      }
+    ],
+    "test": []
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "train": {
+    "best_acc": 0.29882666666666663,
+    "best_epoch_checkpoint_path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-000",
+    "num_performances": 500,
+    "avr_loss": 1.6040879294872283,
+    "var_loss": 0.04376505354076727,
+    "avr_accuracy": 0.29882666666666663,
+    "var_accuracy": 0.007253307682030724
+  },
+  "val": {
+    "best_acc": 0.43879999999999986,
+    "best_epoch_checkpoint_path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-000",
+    "num_performances": 200,
+    "avr_loss": 1.3608534201979636,
+    "var_loss": 0.03470801718026627,
+    "avr_accuracy": 0.43879999999999986,
+    "var_accuracy": 0.008390735901730884
+  },
+  "current_best": {
+    "train": {
+      "acc": 0.29882666666666663,
+      "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-000",
+      "epoch": 0
+    },
+    "val": {
+      "acc": 0.43879999999999986,
+      "path": "/cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/checkpoint/epoch-000",
+      "epoch": 0
+    },
+    "test": {
+      "acc": 0.0,
+      "path": null,
+      "epoch": -1
+    }
+  },
+  "previous_bests": {
+    "train": [
+      {
+        "acc": 0.0,
+        "path": null,
+        "epoch": -1
+      }
+    ],
+    "val": [
+      {
+        "acc": 0.0,
+        "path": null,
+        "epoch": -1
+      }
+    ],
+    "test": []
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "args_file": null,
+  "task": "fsl_imbalanced",
+  "dataset": "mini",
+  "model": "btaml",
+  "backbone": "Conv4",
+  "strategy": null,
+  "gpu": "0",
+  "seed": 1,
+  "deterministic": true,
+  "results_folder": "/cv/experiments",
+  "experiment_name": "imb_mini/25_444_0.34375_step/mini/Conv4/train_on_5-5shot_balanced_15-15query_balanced/None/btaml/1/",
+  "experiment_folder": null,
+  "clean_folder": false,
+  "storage_friendly": true,
+  "data_path": "data/",
+  "continue_from": null,
+  "load_backbone_only": false,
+  "dummy_run": false,
+  "conventional_split": null,
+  "conventional_split_from_train_only": false,
+  "backbone_channel_dim": 64,
+  "tqdm": false,
+  "num_epochs": 200,
+  "num_tasks_per_epoch": 500,
+  "num_tasks_per_validation": 200,
+  "num_tasks_per_testing": 600,
+  "evaluate_on_test_set_only": false,
+  "val_or_test": "val",
+  "no_val_loop": false,
+  "test_performance_tag": "test",
+  "fix_class_distribution": false,
+  "count_samples_stats": false,
+  "model_args": {
+    "seed": -1,
+    "lr": 0.001,
+    "lr_decay": 0.1,
+    "lr_decay_step": 100,
+    "num_inner_loop_steps": {
+      "train": 4,
+      "val": 10,
+      "test": 10
+    },
+    "inner_loop_lr": 0.01,
+    "approx": false,
+    "approx_until": 0,
+    "batch_size": 4,
+    "output_dim": {
+      "train": -1,
+      "val": -1,
+      "test": -1
+    },
+    "omega_on": true,
+    "gamma_on": true,
+    "alpha_on": true,
+    "z_on": true,
+    "with_sampling": true,
+    "num_draws": {
+      "train": 1,
+      "val": 1,
+      "test": 10
+    },
+    "max_shot": -1
+  },
+  "strategy_args": {},
+  "dataset_args": {
+    "dataset_version": null,
+    "data_path": "./data/",
+    "train": {
+      "aug": true,
+      "min_num_samples": 25,
+      "max_num_samples": 444,
+      "num_minority": 0.34375,
+      "imbalance_distribution": "step"
+    },
+    "normalise": true,
+    "use_cache": true,
+    "image_width": 84,
+    "image_height": 84,
+    "image_channels": 3,
+    "use_classes_frac": null,
+    "seed": -1,
+    "eval": {
+      "aug": false,
+      "min_num_samples": null,
+      "max_num_samples": null,
+      "num_minority": null,
+      "imbalance_distribution": null
+    }
+  },
+  "ptracker_args": {
+    "save_task_performance": false,
+    "trval": {
+      "metrics": [
+        "accuracy",
+        "loss"
+      ]
+    },
+    "test": {
+      "metrics": [
+        "accuracy",
+        "loss",
+        "per_cls_stats"
+      ]
+    }
+  },
+  "task_args": {
+    "num_classes": 5,
+    "min_num_supports": 5,
+    "max_num_supports": 5,
+    "num_minority": null,
+    "imbalance_distribution": "balanced",
+    "min_num_targets": 15,
+    "max_num_targets": 15,
+    "num_minority_targets": null,
+    "imbalance_distribution_targets": "balanced",
+    "batch_size": 1
+  }
+}

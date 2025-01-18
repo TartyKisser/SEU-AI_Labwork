@@ -1,0 +1,26 @@
+{
+
+    "task_args": {
+        "test": {
+            "support_idx": [1,600,300],
+            "target_idx": [4,602,301,40,50,307,308,309,590,591,594]
+        }
+    },
+    "ptracker_args": {
+        "test": { "metrics": ["accuracy", "loss", "preds"], "save_task_performance": false },
+        "train": { "metrics": ["accuracy", "loss", "preds"], "save_task_performance": false },
+        "val": { "metrics": ["accuracy", "loss", "preds"], "save_task_performance": false }
+    },
+    "seed": 0,
+    "dataset": "cub",
+    "version": null,
+    "data_path": "/cv/data",
+    "exp_path": "/experiments/imbalanced_supports/cub/Conv4/",
+    "models": [
+        {
+            "name": "Btaml",
+            "gpu": "7",
+            "continue_from": "train_on_1-9shot_random_15-15query_balanced/cb_loss/btaml/2/"
+        }
+    ]
+}

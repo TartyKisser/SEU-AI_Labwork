@@ -1,0 +1,1 @@
+python src/main.py --args_file /cv/experiments/imbalanced_supports/mini/Conv4/train_on_1-9shot_random_15-15query_balanced/ros_aug/protonet/5trainway/1/configs/config.json --gpu {gpu} 

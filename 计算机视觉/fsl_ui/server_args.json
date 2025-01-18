@@ -1,0 +1,55 @@
+{
+    "port"       : 8891,
+    "seed"       : 0,
+    "dataset"    : "mini",
+    "version"    : null,
+    "data_path"  : "/media/disk2/mateusz/data/pkl/",
+    "exp_path"   : "/media/disk2/mateusz/repositories/imbalanced_fsl_dev/experiments/imbalanced_supports/mini/Conv4/",
+    "models":[
+        {
+            "name":"MatchNet",
+            "gpu":"0",
+            "continue_from": "train_on_5-5shot_balanced_15-15query_balanced/None/matchingnet/0/"
+        },
+        {
+            "name":"ProtoNet",
+            "gpu":"0",
+            "continue_from": "train_on_5-5shot_balanced_15-15query_balanced/None/protonet/5trainway/0/"
+        },
+        {
+            "name":"RelationNet",
+            "gpu":"0",
+            "continue_from": "train_on_5-5shot_balanced_15-15query_balanced/None/relationnet/softmax/0/"
+        },
+        {
+            "name":"DKT",
+            "gpu":"0",
+            "continue_from": "train_on_5-5shot_balanced_15-15query_balanced/None/dkt/0/"
+        },
+        {
+            "name":"MAML",
+            "gpu":"0",
+            "continue_from": "train_on_5-5shot_balanced_15-15query_balanced/None/maml/10innersteps_0.1innerlr/0/"
+        },
+        {
+            "name":"ProtoMAML",
+            "gpu":"0",
+            "continue_from": "train_on_5-5shot_balanced_15-15query_balanced/None/protomaml/5innersteps_0.005innerlr/0/"
+        },
+        {
+            "name":"SimpleShot",
+            "gpu":"0",
+            "continue_from": "train_on_5-5shot_balanced_15-15query_balanced/None/simpleshot/0/"
+        },
+        {
+            "name":"Baseline++",
+            "gpu":"0",
+            "continue_from": "train_on_5-5shot_balanced_15-15query_balanced/None/baselinepp/0/"
+        },
+        {
+            "name":"Baseline",
+            "gpu":"0",
+            "continue_from": "train_on_5-5shot_balanced_15-15query_balanced/None/baseline/0/"
+        }
+    ]
+}

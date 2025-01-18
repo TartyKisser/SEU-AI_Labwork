@@ -1,0 +1,1 @@
+python src/main.py --args_file /cv/experiments/imb_mini/None_None_None_None/mini/Conv4/train_on_5-5shot_balanced_15-15query_balanced/None/simpleshot/1/configs/config.json --gpu {gpu} 

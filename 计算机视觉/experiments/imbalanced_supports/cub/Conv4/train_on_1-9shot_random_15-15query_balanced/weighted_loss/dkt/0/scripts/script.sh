@@ -1,0 +1,1 @@
+python src/main.py --args_file /cv/experiments/imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/weighted_loss/dkt/0/configs/config.json --gpu {gpu} 

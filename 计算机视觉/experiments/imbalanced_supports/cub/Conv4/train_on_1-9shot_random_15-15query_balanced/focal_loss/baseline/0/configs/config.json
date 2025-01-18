@@ -1,0 +1,105 @@
+{
+  "args_file": null,
+  "task": "fsl_imbalanced",
+  "dataset": "cub",
+  "model": "baseline",
+  "backbone": "Conv4",
+  "strategy": "focal_loss",
+  "gpu": "0",
+  "seed": 0,
+  "deterministic": true,
+  "results_folder": "/cv/experiments",
+  "experiment_name": "imbalanced_supports/cub/Conv4/train_on_1-9shot_random_15-15query_balanced/focal_loss/baseline/0/",
+  "experiment_folder": null,
+  "clean_folder": false,
+  "storage_friendly": true,
+  "data_path": "data/",
+  "continue_from": null,
+  "load_backbone_only": false,
+  "dummy_run": false,
+  "conventional_split": true,
+  "conventional_split_from_train_only": false,
+  "backbone_channel_dim": 64,
+  "tqdm": false,
+  "num_epochs": 200,
+  "num_tasks_per_epoch": 500,
+  "num_tasks_per_validation": 200,
+  "num_tasks_per_testing": 600,
+  "evaluate_on_test_set_only": false,
+  "val_or_test": "val",
+  "no_val_loop": false,
+  "test_performance_tag": "test",
+  "fix_class_distribution": false,
+  "count_samples_stats": false,
+  "model_args": {
+    "seed": -1,
+    "lr": 0.001,
+    "lr_decay": 0.1,
+    "lr_decay_step": 100,
+    "finetune_batch_size": 4,
+    "finetune_iter": 100,
+    "output_dim": {
+      "train": -1,
+      "test": -1
+    }
+  },
+  "strategy_args": {
+    "gamma": 2,
+    "alpha": false,
+    "size_average": false
+  },
+  "dataset_args": {
+    "dataset_version": null,
+    "data_path": "./data/",
+    "train": {
+      "aug": true
+    },
+    "normalise": true,
+    "use_cache": true,
+    "image_width": 84,
+    "image_height": 84,
+    "image_channels": 3,
+    "min_num_samples": null,
+    "max_num_samples": null,
+    "num_minority": null,
+    "imbalance_distribution": null,
+    "use_classes_frac": null,
+    "seed": -1,
+    "eval": {
+      "aug": false
+    }
+  },
+  "ptracker_args": {
+    "save_task_performance": false,
+    "trval": {
+      "metrics": [
+        "accuracy",
+        "loss"
+      ]
+    },
+    "test": {
+      "metrics": [
+        "accuracy",
+        "loss",
+        "per_cls_stats"
+      ]
+    }
+  },
+  "task_args": {
+    "trval": {
+      "batch_size": 128
+    },
+    "test": {
+      "num_classes": 5,
+      "min_num_supports": 1,
+      "max_num_supports": 9,
+      "num_minority": null,
+      "imbalance_distribution": "random",
+      "min_num_targets": 15,
+      "max_num_targets": 15,
+      "num_minority_targets": null,
+      "imbalance_distribution_targets": "balanced",
+      "batch_size": 1
+    }
+  }
+}
