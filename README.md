@@ -10,9 +10,7 @@
 
 
 ### 联系方式  
-- 邮箱：tartykisser1022@gmail.com
-- QQ：2038241768 
-- 手机：17826141365  
+- 邮箱：tartykisser1022@gmail.com 
 
 ---
 
