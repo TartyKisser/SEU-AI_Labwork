@@ -1,0 +1,48 @@
+domain parsed
+problem parsed
+grounding..
+grounding time: 47
+aibr preprocessing
+|f|:9
+|x|:5
+|a|:16
+|p|:0
+|e|:0
+h1 setup time (msec): 13
+ g(n)= 61.0 h(n)=671.0
+ g(n)= 122.0 h(n)=610.0
+ g(n)= 183.0 h(n)=549.0
+ g(n)= 244.0 h(n)=427.0
+ g(n)= 305.0 h(n)=305.0
+ g(n)= 366.0 h(n)=183.0
+ g(n)= 427.0 h(n)=122.0
+ g(n)= 488.0 h(n)=61.0
+ g(n)= 549.0 h(n)=0.0
+problem solved
+
+found plan:
+0.0: (descend lift_b)
+1.0: (board beth lift_a)
+2.0: (ascend lift_a)
+3.0: (ascend lift_a)
+4.0: (board charlie lift_a)
+5.0: (descend lift_a)
+6.0: (descend lift_a)
+7.0: (descend lift_a)
+8.0: (board alex lift_b)
+9.0: (ascend lift_b)
+10.0: (ascend lift_b)
+11.0: (ascend lift_b)
+12.0: (exit beth lift_a)
+13.0: (exit charlie lift_a)
+14.0: (exit alex lift_b)
+
+plan-length:15
+metric (search):549.0
+planning time (msec): 42
+heuristic time (msec): 20
+search time (msec): 36
+expanded nodes:22
+states evaluated:68
+number of dead-ends detected:0
+number of duplicates detected:19

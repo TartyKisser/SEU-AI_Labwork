@@ -1,0 +1,20 @@
+;;!domain: temporal_elevators
+;;!problem: elevators_problem
+
+0.00100: (move-up e1 n1 n2) [1.50000]
+1.51100: (board p1 n2 e1) [2.00000]
+3.52100: (move-down e1 n2 n1) [1.50000]
+5.03100: (leave p1 n1 e1) [2.00000]
+7.04100: (move-up e1 n1 n2) [1.50000]
+8.55100: (board p2 n2 e1) [3.00000]
+11.56100: (move-down e1 n2 n1) [1.50000]
+13.07100: (leave p2 n1 e1) [3.00000]
+16.08000: (move-down e2 n5 n4) [1.00000]
+17.09000: (board p3 n4 e2) [2.00000]
+19.10000: (move-down e2 n4 n3) [1.33333]
+20.44333: (move-down e2 n3 n2) [1.33333]
+21.78666: (move-down e2 n2 n1) [1.00000]
+22.79666: (leave p3 n1 e2) [2.00000]
+
+; Makespan: 16.070999999999998
+; Metric: 16.070999999999998
