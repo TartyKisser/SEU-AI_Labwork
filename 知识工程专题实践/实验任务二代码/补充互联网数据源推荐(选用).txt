@@ -1,0 +1,1 @@
+OpenStreetMap数据，下载地址：https://download.bbbike.org/osm/bbbike/Singapore/
